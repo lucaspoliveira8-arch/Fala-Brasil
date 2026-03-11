@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FalaBrasil | Aprenda Português Brasileiro</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav container">
+        <h1>FalaBrasil</h1>
+        <div class="nav-controls">
+          <label for="native-language">Língua materna</label>
+          <select id="native-language" aria-label="Escolha sua língua materna">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="jp">日本語</option>
+          </select>
+          <button id="theme-toggle" type="button" aria-label="Alternar tema">🌙 Dark mode</button>
+        </div>
+      </nav>
+
+      <section class="container intro">
+        <p class="badge">Do básico à fluência no português brasileiro</p>
+        <h2>Aprenda português para viajar, viver e conversar com confiança no Brasil.</h2>
+        <p id="welcome-text">
+          Escolha sua língua materna e siga uma jornada personalizada de pronúncia, gírias regionais,
+          verbos e conversação com feedback inteligente.
+        </p>
+      </section>
+    </header>
+
+    <main class="container content-grid">
+      <section class="card" id="slangs">
+        <h3>Gírias por região</h3>
+        <p>Explore expressões populares de diferentes estados e regiões do Brasil.</p>
+        <div class="columns">
+          <article>
+            <h4>São Paulo</h4>
+            <ul>
+              <li><strong>Mano</strong> — amigo, colega.</li>
+              <li><strong>Da hora</strong> — muito legal.</li>
+              <li><strong>Mó</strong> — intensificador ("mó frio").</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Rio de Janeiro</h4>
+            <ul>
+              <li><strong>Bolado</strong> — irritado, incomodado.</li>
+              <li><strong>Caô</strong> — mentira, enrolação.</li>
+              <li><strong>Mermão</strong> — forma de chamar alguém.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Goiás</h4>
+            <ul>
+              <li><strong>Trem</strong> — qualquer coisa/objeto.</li>
+              <li><strong>Uai</strong> — interjeição de surpresa.</li>
+              <li><strong>Arreda</strong> — afasta, sai do caminho.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Nordeste</h4>
+            <ul>
+              <li><strong>Oxente</strong> — surpresa/espanto.</li>
+              <li><strong>Massa</strong> — muito bom.</li>
+              <li><strong>Visse</strong> — reforço de atenção.</li>
+            </ul>
+          </article>
+          <article>
+            <h4>Sul</h4>
+            <ul>
+              <li><strong>Bah</strong> — surpresa/intensidade.</li>
+              <li><strong>Tchê</strong> — chamamento típico.</li>
+              <li><strong>Piá/Guria</strong> — menino/menina.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" id="verbs">
+        <h3>Verbos e conjugações por nível</h3>
+        <div class="columns three">
+          <article>
+            <h4>Iniciante</h4>
+            <p><strong>Ser</strong>: eu sou, você é, nós somos</p>
+            <p><strong>Estar</strong>: eu estou, você está, nós estamos</p>
+            <p><strong>Ir</strong>: eu vou, você vai, nós vamos</p>
+          </article>
+          <article>
+            <h4>Intermediário</h4>
+            <p><strong>Fazer</strong>: eu faço, você faz, nós fazemos</p>
+            <p><strong>Poder</strong>: eu posso, você pode, nós podemos</p>
+            <p><strong>Conhecer</strong>: eu conheço, você conhece, nós conhecemos</p>
+          </article>
+          <article>
+            <h4>Avançado</h4>
+            <p><strong>Supor</strong>: eu suponho, você supõe, nós supomos</p>
+            <p><strong>Intervir</strong>: eu intervenho, você intervém, nós intervimos</p>
+            <p><strong>Requerer</strong>: eu requeiro, você requer, nós requeremos</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card" id="conversation">
+        <h3>Conversação para viagem ao Brasil</h3>
+        <ol>
+          <li><strong>Básico:</strong> cumprimentos, pedir informação, números e horários.</li>
+          <li><strong>Intermediário:</strong> hotel, restaurantes, transporte e emergências.</li>
+          <li><strong>Avançado:</strong> negociações, expressões culturais e conversas profissionais.</li>
+        </ol>
+        <p>Dica prática: simule situações reais do aeroporto, táxi e check-in para acelerar sua confiança.</p>
+      </section>
+
+      <section class="card" id="ai-coach">
+        <h3>Treino de conversação com AI</h3>
+        <p>Fale com um agente virtual para praticar diálogos do dia a dia.</p>
+        <label for="scenario">Cenário</label>
+        <select id="scenario">
+          <option>Restaurante</option>
+          <option>Aeroporto</option>
+          <option>Hotel</option>
+          <option>Praia</option>
+          <option>Reunião de trabalho</option>
+        </select>
+        <button id="start-ai" type="button">Iniciar prática</button>
+        <p id="ai-feedback" class="feedback">Clique em “Iniciar prática” para receber um desafio.</p>
+      </section>
+
+      <section class="card" id="pronunciation">
+        <h3>Laboratório de pronúncia</h3>
+        <p>Treine sons difíceis do português brasileiro.</p>
+        <ul>
+          <li><strong>R:</strong> "carro", "porta", "Brasil"</li>
+          <li><strong>LH:</strong> "filho", "trabalho"</li>
+          <li><strong>NH:</strong> "manhã", "vinho"</li>
+          <li><strong>Ã / Õ:</strong> nasalização em "pão" e "bom"</li>
+        </ul>
+      </section>
+
+      <section class="card" id="fluency-map">
+        <h3>Mapa de fluência e agente de progresso</h3>
+        <p>Veja seu desempenho por habilidade e receba recomendações personalizadas.</p>
+        <div class="progress-grid">
+          <div>
+            <label for="slang-score">Gírias regionais</label>
+            <input id="slang-score" type="range" min="0" max="100" value="40" />
+          </div>
+          <div>
+            <label for="verb-score">Verbos e conjugação</label>
+            <input id="verb-score" type="range" min="0" max="100" value="60" />
+          </div>
+          <div>
+            <label for="conversation-score">Conversação</label>
+            <input id="conversation-score" type="range" min="0" max="100" value="55" />
+          </div>
+          <div>
+            <label for="pronunciation-score">Pronúncia</label>
+            <input id="pronunciation-score" type="range" min="0" max="100" value="35" />
+          </div>
+        </div>
+        <button id="analyze" type="button">Analisar e recomendar</button>
+        <p id="recommendation" class="feedback">Seu plano de estudo vai aparecer aqui.</p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>FalaBrasil © 2026 — Português brasileiro para o mundo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
