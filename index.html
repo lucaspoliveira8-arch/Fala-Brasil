@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FalaBrasil | Capítulos Interativos de Português</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav container">
+        <h1>FalaBrasil</h1>
+        <div class="nav-controls">
+          <label for="native-language">Língua materna</label>
+          <select id="native-language" aria-label="Escolha sua língua materna">
+            <option value="pt">Português</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="jp">日本語</option>
+          </select>
+          <button id="theme-toggle" type="button">🌙 Dark mode</button>
+        </div>
+      </nav>
+
+      <section class="container intro">
+        <p class="badge">Aprendizado por capítulos</p>
+        <h2>Aprenda português brasileiro por tópicos, com exercícios e testes ao final de cada capítulo.</h2>
+        <p id="welcome-text">
+          Selecione sua língua materna para receber explicações em seu idioma e aprender português de forma guiada.
+        </p>
+      </section>
+    </header>
+
+    <main class="container main-layout">
+      <section class="tabs" aria-label="Tópicos de aprendizado">
+        <button class="tab-btn active" data-tab="slang">Gírias por estado</button>
+        <button class="tab-btn" data-tab="verbs">Verbos</button>
+        <button class="tab-btn" data-tab="conversation">Conversação</button>
+        <button class="tab-btn" data-tab="pronunciation">Pronúncia</button>
+        <button class="tab-btn" data-tab="fluency">Mapa de fluência</button>
+      </section>
+
+      <section id="tab-slang" class="tab-panel active card">
+        <h3>Capítulo 1: Gírias por região</h3>
+        <p class="helper" data-help-key="slang">As explicações deste capítulo serão adaptadas para sua língua materna.</p>
+        <div class="chapter-grid">
+          <article><h4>São Paulo</h4><p>Mano, da hora, mó.</p></article>
+          <article><h4>Rio de Janeiro</h4><p>Bolado, caô, mermão.</p></article>
+          <article><h4>Goiás</h4><p>Trem, uai, arreda.</p></article>
+          <article><h4>Nordeste</h4><p>Oxente, massa, visse.</p></article>
+          <article><h4>Sul</h4><p>Bah, tchê, piá/guria.</p></article>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício interativo</h4>
+          <p>Qual gíria do Goiás é usada para “coisa/objeto”?</p>
+          <div class="options" data-exercise="slang">
+            <button data-value="caô">Caô</button>
+            <button data-value="trem">Trem</button>
+            <button data-value="bah">Bah</button>
+          </div>
+          <p id="feedback-slang" class="feedback">Escolha uma opção.</p>
+        </div>
+
+        <div class="quiz">
+          <h4>Teste final do capítulo</h4>
+          <p>“Oxente” é mais comum em qual região?</p>
+          <select id="quiz-slang">
+            <option value="">Selecione</option>
+            <option value="sp">São Paulo</option>
+            <option value="nordeste">Nordeste</option>
+            <option value="sul">Sul</option>
+          </select>
+          <button data-submit="slang">Enviar teste</button>
+        </div>
+      </section>
+
+      <section id="tab-verbs" class="tab-panel card">
+        <h3>Capítulo 2: Verbos e conjugações</h3>
+        <p class="helper" data-help-key="verbs">Você verá explicações em sua língua materna para entender melhor regras verbais.</p>
+        <div class="chapter-grid three">
+          <article><h4>Iniciante</h4><p>Ser, estar, ir.</p></article>
+          <article><h4>Intermediário</h4><p>Fazer, poder, conhecer.</p></article>
+          <article><h4>Avançado</h4><p>Supor, intervir, requerer.</p></article>
+        </div>
+
+        <div class="exercise">
+          <h4>Exercício interativo</h4>
+          <p>Complete: “Nós ____ para o Brasil amanhã.”</p>
+          <input id="verb-input" type="text" placeholder="Digite a conjugação" />
+          <button id="check-verb">Verificar</button>
+          <p id="feedback-verbs" class="feedback">Digite sua resposta.</p>
+        </div>
+
+        <div class="quiz">
+          <h4>Teste final do capítulo</h4>
+          <p>Qual forma está correta?</p>
+          <select id="quiz-verbs">
+            <option value="">Selecione</option>
+            <option value="nós vai">Nós vai</option>
+            <option value="nós vamos">Nós vamos</option>
+            <option value="nós vou">Nós vou</option>
+          </select>
+          <button data-submit="verbs">Enviar teste</button>
+        </div>
+      </section>
+
+      <section id="tab-conversation" class="tab-panel card">
+        <h3>Capítulo 3: Conversação para viagem</h3>
+        <p class="helper" data-help-key="conversation">Treine situações reais com instruções adaptadas ao seu idioma natal.</p>
+        <ol>
+          <li><strong>Básico:</strong> cumprimentos e direção.</li>
+          <li><strong>Intermediário:</strong> restaurante, hotel e transporte.</li>
+          <li><strong>Avançado:</strong> negociação e contexto profissional.</li>
+        </ol>
+
+        <div class="exercise">
+          <h4>Exercício interativo</h4>
+          <label for="scenario">Escolha um cenário:</label>
+          <select id="scenario">
+            <option>Restaurante</option>
+            <option>Aeroporto</option>
+            <option>Hotel</option>
+          </select>
+          <button id="start-ai" type="button">Gerar desafio de conversa</button>
+          <p id="ai-feedback" class="feedback">Clique para iniciar.</p>
+        </div>
+
+        <div class="quiz">
+          <h4>Teste final do capítulo</h4>
+          <p>Qual frase é mais adequada para pedir informação na rua?</p>
+          <select id="quiz-conversation">
+            <option value="">Selecione</option>
+            <option value="cadê hotel">Cadê hotel?</option>
+            <option value="onde fica">Onde fica o meu hotel, por favor?</option>
+            <option value="hotel agora">Hotel agora.</option>
+          </select>
+          <button data-submit="conversation">Enviar teste</button>
+        </div>
+      </section>
+
+      <section id="tab-pronunciation" class="tab-panel card">
+        <h3>Capítulo 4: Pronúncia</h3>
+        <p class="helper" data-help-key="pronunciation">Aprenda sons do português com orientação em sua língua materna.</p>
+        <ul>
+          <li>R: carro, porta, Brasil</li>
+          <li>LH: filho, trabalho</li>
+          <li>NH: manhã, vinho</li>
+          <li>Nasal: pão, bom</li>
+        </ul>
+
+        <div class="exercise">
+          <h4>Exercício interativo</h4>
+          <p>Qual palavra tem som nasal forte?</p>
+          <div class="options" data-exercise="pronunciation">
+            <button data-value="pao">Pão</button>
+            <button data-value="casa">Casa</button>
+            <button data-value="livro">Livro</button>
+          </div>
+          <p id="feedback-pronunciation" class="feedback">Escolha uma opção.</p>
+        </div>
+
+        <div class="quiz">
+          <h4>Teste final do capítulo</h4>
+          <p>Qual palavra contém “LH”?</p>
+          <select id="quiz-pronunciation">
+            <option value="">Selecione</option>
+            <option value="filho">Filho</option>
+            <option value="fino">Fino</option>
+            <option value="fio">Fio</option>
+          </select>
+          <button data-submit="pronunciation">Enviar teste</button>
+        </div>
+      </section>
+
+      <section id="tab-fluency" class="tab-panel card">
+        <h3>Capítulo 5: Mapa de fluência e relatório de pontos fracos</h3>
+        <p>Seu desempenho por seção com diagnóstico automático.</p>
+        <div id="chapter-results" class="results"></div>
+        <button id="show-diagnosis" type="button">Ver diagnóstico geral</button>
+        <p id="diagnosis-text" class="feedback">Complete os testes dos capítulos para gerar o diagnóstico.</p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>FalaBrasil © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
